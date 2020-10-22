@@ -7,24 +7,31 @@
 ### Usage
 
 ```shell
-$ docker run -it --name postgres achillesrasquinha/postgres
+$ docker run --rm -it --name postgres -d achillesrasquinha/postgres
 ```
 
 ### Commands
 
-```
-  help        Display the help message and exit.
-  backup      Backup files and databases.
-  backups     List all backups.
-  restore     /path/to/backup  Restore a DataBase backup.
-  check       Check status of PostGreSQL server.
-  shell       Launch pgcli shell.
-```
+| Name          | Help 
+|---------------|------
+| `help`        | Display the help message and exit.
+| `backup`      | Backup files and databases.
+| `backups`     | List all backups.
+| `restore`     | /path/to/backup  Restore a DataBase backup.
+| `check`       | Check status of PostGreSQL server.
+| `shell`       | Launch pgcli shell.
 
 #### Usage
 
 ```shell
 $ docker exec -it postgres "<command>"
+```
+
+e.g.
+
+```shell
+$ docker exec -it postgres check
+OK
 ```
 
 ### License
