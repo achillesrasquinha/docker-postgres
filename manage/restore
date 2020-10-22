@@ -11,7 +11,7 @@ if [[ -z "${1}" ]]; then
     exit 1
 fi
 
-filepath="${1}"
+filepath="${PATH_BACKUPS}/${1}"
 
 echo "Dropping DataBase "${POSTGRES_DB}"..."
 dropdb "${POSTGRES_DB}"
