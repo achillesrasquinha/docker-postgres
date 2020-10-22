@@ -7,7 +7,7 @@
 ### Usage
 
 ```shell
-$ docker run --rm -it {{ docker_hub_username }}/{{ docker_hub_repo }}
+$ docker run --rm -it --name {{ container_name }} -d {{ docker_hub_username }}/{{ docker_hub_repo }}
 ```
 
 ### License
