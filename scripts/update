@@ -3,9 +3,8 @@
 set -e
 
 echo "Checking if remote exists..."
-git ls-remote --exit-code template
 
-if test $? = 0; then
+if [[ -z $(git remote | grep 'template') ]]; then
     echo "Remote not found. Adding remote template..."
     git remote add template https://github.com/achillesrasquinha/docker-template
 fi
