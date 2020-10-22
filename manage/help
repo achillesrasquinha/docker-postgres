@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Usage:"
+echo "  help        Display the help message and exit."
