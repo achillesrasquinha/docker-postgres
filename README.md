@@ -12,14 +12,20 @@ $ docker run --rm -it --name {{ container_name }} -d {{ docker_hub_username }}/{
 
 ### Commands
 
-```
-  help                        Display the help message and exit.
-```
+| Name          | Help 
+|---------------|------
+| `help`        | Display the help message and exit.
 
 #### Usage
 
 ```shell
 $ docker exec -it {{ container_name }} "<command>"
+```
+
+e.g.
+
+```shell
+$ docker exec -it {{ container_name }} help
 ```
 
 ### License
