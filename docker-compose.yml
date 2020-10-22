@@ -1,0 +1,11 @@
+version: "3.5"
+
+x-defaults: &defaults
+  restart: always
+
+services:
+  service:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: {{ docker_hub_username }}/{{ docker_hub_repo }}
