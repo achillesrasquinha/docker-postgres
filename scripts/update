@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Checking if remote exists..."
+
+if [[ -z $(git remote | grep 'template') ]]; then
+    echo "Remote not found. Adding remote template..."
+    git remote add template https://github.com/achillesrasquinha/docker-template
+fi
+
+echo "Fetching updates..."
+git fetch --all
+
+echo "Merging changes..."
+git merge template/develop --allow-unrelated-histories
