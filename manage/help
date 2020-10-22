@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Usage:"
+echo "  help        Display the help message and exit."
+echo "  backup      Backup files and databases."
+echo "  backups     List all backups."
+echo "  restore     /path/to/backup  Restore a DataBase backup."
+echo "  check       Check status of PostGreSQL server."
+echo "  shell       Launch pgcli shell."

@@ -7,7 +7,24 @@
 ### Usage
 
 ```shell
-$ docker run --rm -it -e POSTGRES_PASSWORD=postgres achillesrasquinha/postgres
+$ docker run -it --name postgres achillesrasquinha/postgres
+```
+
+### Commands
+
+```
+  help                        Display the help message and exit.
+  backup                      Backup files and databases.
+  backups                     List all backups.
+  restore                     /path/to/backup  Restore a DataBase backup.
+  check                       Check status of PostGreSQL server.
+  shell                       Launch pgcli shell.
+```
+
+#### Usage
+
+```shell
+$ docker exec -it postgres "<command>"
 ```
 
 ### License
