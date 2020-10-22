@@ -21,4 +21,4 @@ RUN chmod +x /manage/* \
     && mv /manage/* /usr/local/bin \
     && rmdir /manage
 
-VOLUME [ "/var/lib/postgresql/data" ]
+VOLUME [ "/var/lib/postgresql/data", "/var/lib/postgresql/backups" ]
