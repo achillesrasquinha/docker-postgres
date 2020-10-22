@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+basedir="$(dirname "${0}")"
+
+source "${basedir}/includes/constants"
+
+pg_isready -q && echo "OK"
